@@ -11,114 +11,33 @@ start = time.time()
 
 all_columns = pd.read_csv(INPUT_FILE, nrows=0).columns.tolist()
 
+# Numeric variables that IPUMS also labels (e.g. top-codes, N/A).
+# These are real numbers, not categories, so the number is kept.
+numeric_variables = {
+    "YEAR",
+    "AGE",
+    "FAMSIZE",
+    "NCHILD",
+    "UHRSWORK",
+    "YRMARR",
+    "RENT",
+    "VALUEH",
+    "POVERTY",
+}
+
+# For categorical features, drop the numeric code and keep the
+# readable label, e.g. DIVINYR (dropped) / DIVINYR_LABEL (kept).
 drop_columns = [
-
-    # -----------------------------------------
-    # Technical fields not used as predictors
-    # -----------------------------------------
-    "YEAR_LABEL",
-    "SAMPLE",
-    "SAMPLE_LABEL",
-    "SERIAL",
-    "CBSERIAL",
-    "HHWT",
-    "CLUSTER",
-    "STRATA",
-    "GQ",
-    "GQ_LABEL",
-    "PERNUM",
-
-    # -----------------------------------------
-    # Keep LABEL for categorical variables
-    # -----------------------------------------
-    "HHTYPE",
-    "REGION",
-    "STATEFIP",
-    "METRO",
-    "OWNERSHP",
-    "VEHICLES",
-    "COUPLETYPE",
-
-    "SEX",
-    "MARST",
-    "MARRNO",
-    "DIVINYR",
-    "RACE",
-    "HISPAN",
-    "EDUC",
-    "EMPSTAT",
-    "LABFORCE",
-    "CLASSWKR",
-    "WKSWORK2",
-    "MIGRATE1",
-
-    # -----------------------------------------
-    # Drop detailed versions completely
-    # -----------------------------------------
-    "OWNERSHPD",
-    "OWNERSHPD_LABEL",
-
-    "RACED",
-    "RACED_LABEL",
-
-    "HISPAND",
-    "HISPAND_LABEL",
-
-    "EDUCD",
-    "EDUCD_LABEL",
-
-    "EMPSTATD",
-    "EMPSTATD_LABEL",
-
-    "CLASSWKRD",
-    "CLASSWKRD_LABEL",
-
-    "MIGRATE1D",
-    "MIGRATE1D_LABEL",
-
-    # -----------------------------------------
-    # Numeric variables: keep number,
-    # drop redundant text label
-    # -----------------------------------------
-    "AGE_LABEL",
-    "FAMSIZE_LABEL",
-    "NCHILD_LABEL",
-    "UHRSWORK_LABEL",
-    "POVERTY_LABEL",
-    "RENT_LABEL",
-    "VALUEH_LABEL",
-    "YRMARR_LABEL",
-]
-
-# Keep YEAR: this extract pools the 2008, 2016 and 2024 ACS samples.
-# Keep PERWT for survey weighting.
-# Keep numeric:
-# YEAR
-# AGE
-# FAMSIZE
-# NCHILD
-# UHRSWORK
-# YRMARR
-# RENT
-# VALUEH
-# HHINCOME
-# INCTOT
-# FTOTINC
-# INCWAGE
-# INCEARN
-# POVERTY
-# PERWT
-
-existing_drop_columns = [
-    col for col in drop_columns
-    if col in all_columns
+    col for col in all_columns
+    if f"{col}_LABEL" in all_columns
+    and col not in numeric_variables
 ]
 keep_columns = [
     col for col in all_columns
-    if col not in existing_drop_columns
+    if col not in drop_columns
 ]
 
-print(f"Dropping {len(existing_drop_columns)} columns...")
+print(f"Dropping {len(drop_columns)} columns...")
 
 # File is several GB, so read only the kept columns and write in chunks.
 # dtype=str preserves the original formatting (e.g. leading zeros).
