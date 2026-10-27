@@ -1,0 +1,1204 @@
+IPUMS USA 2008/2016/2024 ACS — COLUMNS IN CSV ORDER
+
+Total variables retained after removing _LABEL columns: 46
+Underlying variables: 46
+
+For categorical variables, the raw coded variable is followed by its label mapping.
+Variables without category mappings are marked 'no categorical mapping'.
+
+1. YEAR
+   Census/ACS year in which the record appears.
+   Mapping:
+     2008 = 2008
+     2016 = 2016
+     2024 = 2024
+
+2. SAMPLE
+   Identifies the specific IPUMS sample.
+   Mapping:
+     202401 = 2024 ACS
+     201601 = 2016 ACS
+     200801 = 2008 ACS
+
+3. SERIAL
+   IPUMS household identification number within a sample.
+   Mapping: no categorical mapping
+
+4. CBSERIAL
+   Original Census Bureau household identification number.
+   Mapping: no categorical mapping
+
+5. HHWT
+   Household weight: number of U.S. households represented.
+   Mapping: no categorical mapping
+
+6. HHTYPE
+   Household type and composition.
+   Mapping:
+     0 = N/A
+     1 = Married-couple family household
+     2 = Male householder, no wife present
+     3 = Female householder, no husband present
+     4 = Male householder, living alone
+     5 = Male householder, not living alone
+     6 = Female householder, living alone
+     7 = Female householder, not living alone
+     9 = HHTYPE could not be determined
+
+7. CLUSTER
+   Household sampling cluster for variance estimation.
+   Mapping: no categorical mapping
+
+8. REGION
+   Census region and division.
+   Mapping:
+     11 = New England Division
+     12 = Middle Atlantic Division
+     21 = East North Central Div.
+     22 = West North Central Div.
+     31 = South Atlantic Division
+     32 = East South Central Div.
+     33 = West South Central Div.
+     41 = Mountain Division
+     42 = Pacific Division
+
+9. STATEFIP
+   State of residence (FIPS code).
+   Mapping:
+     01 = Alabama
+     02 = Alaska
+     04 = Arizona
+     05 = Arkansas
+     06 = California
+     08 = Colorado
+     09 = Connecticut
+     10 = Delaware
+     11 = District of Columbia
+     12 = Florida
+     13 = Georgia
+     15 = Hawaii
+     16 = Idaho
+     17 = Illinois
+     18 = Indiana
+     19 = Iowa
+     20 = Kansas
+     21 = Kentucky
+     22 = Louisiana
+     23 = Maine
+     24 = Maryland
+     25 = Massachusetts
+     26 = Michigan
+     27 = Minnesota
+     28 = Mississippi
+     29 = Missouri
+     30 = Montana
+     31 = Nebraska
+     32 = Nevada
+     33 = New Hampshire
+     34 = New Jersey
+     35 = New Mexico
+     36 = New York
+     37 = North Carolina
+     38 = North Dakota
+     39 = Ohio
+     40 = Oklahoma
+     41 = Oregon
+     42 = Pennsylvania
+     44 = Rhode Island
+     45 = South Carolina
+     46 = South Dakota
+     47 = Tennessee
+     48 = Texas
+     49 = Utah
+     50 = Vermont
+     51 = Virginia
+     53 = Washington
+     54 = West Virginia
+     55 = Wisconsin
+     56 = Wyoming
+
+10. METRO
+   Metropolitan status / central-city status.
+   Mapping:
+     1 = Not in metropolitan area
+     2 = Metropolitan status indeterminable (mixed)
+     3 = In metropolitan area: Not in central/principal city
+     4 = In metropolitan area: Central/principal city status indeterminable (mixed)
+     5 = In metropolitan area: In central/principal city
+
+11. STRATA
+   Sampling stratum for variance estimation.
+   Mapping: no categorical mapping
+
+12. GQ
+   Group quarters status.
+   Mapping:
+     1 = Households under 1970 definition
+     2 = Additional households under 1990 definition
+     3 = Group quarters--Institutions
+     4 = Other group quarters
+     5 = Additional households under 2000 definition
+
+13. OWNERSHP
+   General ownership/tenure of dwelling.
+   Mapping:
+     0 = N/A
+     1 = Owned or being bought (loan)
+     2 = Rented
+
+14. OWNERSHPD
+   Detailed ownership/tenure of dwelling.
+   Mapping:
+     00 = N/A
+     10 = Owned or being bought
+     12 = Owned free and clear
+     13 = Owned with mortgage or loan
+     20 = Rented
+     21 = No cash rent
+     22 = With cash rent
+
+15. RENT
+   Monthly contract rent.
+   Mapping:
+     0000 = N/A
+     0025 = $1-50
+     0010 = $1-19
+     0035 = $30-39
+     0045 = $40-49
+     0055 = $50-59
+     0065 = $60-69
+     0075 = $70-79
+     0085 = $80-89
+     0115 = $110-119
+     0125 = $120-129
+     0145 = $140-149
+     0155 = $150-159
+     0165 = $160-169
+     0185 = $180-189
+     0195 = $190-199
+     0212 = $200-224
+     0237 = $225-249
+     0262 = $250-274
+     0287 = $275-299
+     0325 = $300-349
+     0375 = $350-399
+     0500 = $500+
+     0112 = $100-124
+     0137 = $125-149
+     0162 = $150-174
+     0187 = $175-199
+     0282 = $275-299
+     0312 = $300-324
+     0337 = $325-349
+     0362 = $350-374
+     0387 = $375-399
+     0412 = $400-424
+     0437 = $425-449
+     0462 = $450-474
+     0487 = $475-499
+     0512 = $500-524
+     0537 = $525-549
+     0575 = $550-599
+     0625 = $600-649
+     0675 = $650-699
+     0725 = $700-749
+     0875 = $750-999
+     1000 = $1,000+
+
+16. HHINCOME
+   Total household income.
+   Mapping: no categorical mapping
+
+17. VALUEH
+   House value.
+   Mapping:
+     0000250 = Less than $500
+     0000500 = Less than $999
+     0001000 = Less than $2,000
+     0001500 = $2,000-$1,999
+     0002500 = Less than $5,000
+     0003500 = $3,000-$3,999
+     0004000 = $3,000-$4,999
+     0004500 = $4,000-$4,999
+     0005000 = Less than $10,000
+     0006250 = $5,000 - 7,499
+     0008750 = $7,500 - 9,999
+     0012500 = $10,000 - 14,999
+     0011250 = $10,000 - 12,499
+     0013750 = $12,500 - 14,999
+     0017500 = $15,000 - 19,999
+     0016250 = $15,000 - 17,499
+     0018750 = $17,500 - 19,999
+     0025000 = $20,000-$29,999
+     0022500 = $20,000 - 24,999
+     0021250 = $20,000 - 22,499
+     0023750 = $22,500 - 24,999
+     0030000 = $25,000 - 34,999
+     0026250 = $25,000 - 27,499
+     0027500 = $25,000 - 29,999
+     0028750 = $27,500 - 29,999
+     0032500 = $30,000 - 34,999
+     0031250 = $30,000-$32,499
+     0033750 = $32,500-$34,999
+     0035000 = $35,000+
+     0042500 = $35,000 - 49,999
+     0037500 = $35,000 - 39,999
+     0036250 = $35,000-$37,499
+     0038750 = $37,500-$39,999
+     0045000 = $40,000 - 49,999
+     0042499 = $40,000 - 44,999
+     0047500 = $45,000 - 49,999
+     0050000 = $50,000+
+     0055000 = $50,000 - 59,999
+     0052500 = $50,000 - 54,999
+     0057500 = $55,000 - 59,999
+     0065000 = $60,000 - 69,999
+     0062500 = $60,000 - 64,999
+     0067500 = $65,000 - 69,999
+     0075000 = $70,000 - 79,999
+     0072500 = $70,000 - 74,999
+     0077500 = $75,000 - 79,999
+     0087500 = $75,000-$99,999
+     0085000 = $80,000 - 89,999
+     0095000 = $90,000 - 99,999
+     0100000 = $100,000+
+     0112500 = $100,000 - 124,999
+     0137500 = $125,000 - 149,999
+     0175000 = $150,000 - 199,999
+     0162500 = $150,000 - 174,999
+     0187500 = $175,000 - 199,999
+     0200000 = $200,000+
+     0225000 = $200,000 - 249,999
+     0275000 = $250,000 - 299,999
+     0350000 = $300,000 - 399,999
+     0400000 = $400,000+
+     0450000 = $400,000 - 499,999
+     0625000 = $500,000 - 749,999
+     0875000 = $750,000 - 999,999
+     1000000 = $1,000,000+
+     9999998 = Missing
+     9999999 = N/A
+
+18. COUPLETYPE
+   Householder couple type.
+   Mapping:
+     0 = N/A
+     1 = Opposite-sex husband/wife/spouse household
+     2 = Same-sex husband/wife/spouse household
+     3 = Opposite-sex unmarried partner household
+     4 = Same-sex unmarried partner household
+
+19. PERNUM
+   Person number within household.
+   Mapping: no categorical mapping
+
+20. PERWT
+   Person weight: number of U.S. persons represented.
+   Mapping: no categorical mapping
+
+21. FAMSIZE
+   Number of own family members in household.
+   Mapping:
+     01 = 1 family member present
+     02 = 2 family members present
+     03 = 3
+     04 = 4
+     05 = 5
+     06 = 6
+     07 = 7
+     08 = 8
+     09 = 9
+     10 = 10
+     11 = 11
+     12 = 12
+     13 = 13
+     14 = 14
+     15 = 15
+     16 = 16
+     17 = 17
+     18 = 18
+     19 = 19
+     20 = 20
+     21 = 21
+     22 = 22
+     23 = 23
+     24 = 24
+     25 = 25
+     26 = 26
+     27 = 27
+     28 = 28
+     29 = 29
+     30 = 30
+     31 = 31
+     32 = 32
+     33 = 33
+     34 = 34
+     35 = 35
+     36 = 36
+     37 = 37
+     38 = 38
+     39 = 39
+     40 = 40
+     41 = 41
+     42 = 42
+     43 = 43
+     44 = 44
+     45 = 45
+     46 = 46
+     47 = 47
+     48 = 48
+     49 = 49
+     50 = 50
+     51 = 51
+     52 = 52
+     53 = 53
+     54 = 54
+     55 = 55
+     56 = 56
+     57 = 57
+     58 = 58
+
+22. NCHILD
+   Number of own children in the household.
+   Mapping:
+     0 = 0 children present
+     1 = 1 child present
+     2 = 2
+     3 = 3
+     4 = 4
+     5 = 5
+     6 = 6
+     7 = 7
+     8 = 8
+     9 = 9+
+
+23. SEX
+   Sex.
+   Mapping:
+     1 = Male
+     2 = Female
+     9 = Missing/blank
+
+24. AGE
+   Age.
+   Mapping:
+     018 = 18
+     019 = 19
+     020 = 20
+     021 = 21
+     022 = 22
+     023 = 23
+     024 = 24
+     025 = 25
+     026 = 26
+     027 = 27
+     028 = 28
+     029 = 29
+     030 = 30
+     031 = 31
+     032 = 32
+     033 = 33
+     034 = 34
+     035 = 35
+     036 = 36
+     037 = 37
+     038 = 38
+     039 = 39
+     040 = 40
+     041 = 41
+     042 = 42
+     043 = 43
+     044 = 44
+     045 = 45
+     046 = 46
+     047 = 47
+     048 = 48
+     049 = 49
+     050 = 50
+     051 = 51
+     052 = 52
+     053 = 53
+     054 = 54
+     055 = 55
+     056 = 56
+     057 = 57
+     058 = 58
+     059 = 59
+     060 = 60
+     061 = 61
+     062 = 62
+     063 = 63
+     064 = 64
+     065 = 65
+     066 = 66
+     067 = 67
+     068 = 68
+     069 = 69
+     070 = 70
+     071 = 71
+     072 = 72
+     073 = 73
+     074 = 74
+     075 = 75
+     076 = 76
+     077 = 77
+     078 = 78
+     079 = 79
+     080 = 80
+     081 = 81
+     082 = 82
+     083 = 83
+     084 = 84
+     085 = 85
+     086 = 86
+     087 = 87
+     088 = 88
+     089 = 89
+     090 = 90 (90+ in 1980 and 1990)
+     091 = 91
+     092 = 92
+     093 = 93
+     094 = 94
+     095 = 95
+     096 = 96
+     097 = 97
+     098 = 98
+     099 = 99
+     100 = 100 (100+ in 1960-1970)
+     101 = 101
+     102 = 102
+     103 = 103
+     104 = 104
+     105 = 105
+     106 = 106
+     107 = 107
+     108 = 108
+     109 = 109
+     110 = 110
+     111 = 111
+     112 = 112 (112+ in the 1980 internal data)
+     113 = 113
+     114 = 114
+     115 = 115 (115+ in the 1990 internal data)
+     116 = 116
+     117 = 117
+     118 = 118
+     119 = 119
+     120 = 120
+     121 = 121
+     122 = 122
+     123 = 123
+     124 = 124
+     125 = 125
+     126 = 126
+     127 = 127
+     128 = 128
+     129 = 129
+     130 = 130
+     131 = 131
+     132 = 132
+     133 = 133
+     134 = 134
+     135 = 135
+     140 = 140
+     999 = Missing
+
+25. MARST
+   Current marital status.
+   Mapping:
+     1 = Married, spouse present
+     2 = Married, spouse absent
+     3 = Separated
+     4 = Divorced
+     5 = Widowed
+     6 = Never married/single
+     9 = Blank, missing
+
+26. MARRNO
+   Times married.
+   Mapping:
+     0 = Not Applicable
+     1 = Married once
+     2 = Married twice (or more)
+     3 = Married thrice (or more)
+     4 = Four times
+     5 = Five times
+     6 = Six times
+     7 = Unknown
+     8 = Illegible
+     9 = Missing
+
+27. YRMARR
+   Year of most recent marriage.
+   Mapping:
+     0000 = N/A
+
+28. DIVINYR
+   Divorced in the past year.
+   Mapping:
+     0 = N/A
+     1 = Blank (No)
+     2 = Yes
+
+29. RACE
+   General race classification.
+   Mapping:
+     1 = White
+     2 = Black/African American
+     3 = American Indian or Alaska Native
+     4 = Chinese
+     5 = Japanese
+     6 = Other Asian or Pacific Islander
+     7 = Other race, nec
+     8 = Two major races
+     9 = Three or more major races
+
+30. RACED
+   Detailed race classification.
+   Mapping:
+     100 = White
+     101 = Albanian alone
+     102 = Armenian alone
+     103 = Austrian alone
+     104 = Basque alone
+     105 = Belarusian alone
+     106 = Belgian alone
+     107 = Bosnian and Herzegovinian alone
+     108 = British alone
+     109 = British Islander alone
+     110 = Spanish write_in
+     111 = Bulgarian alone
+     112 = Celtic alone
+     113 = Croatian alone
+     114 = Czech alone
+     115 = Danish alone
+     116 = Dutch alone
+     117 = English alone
+     118 = Estonian alone
+     119 = Finnish alone
+     120 = Blank (white)
+     121 = French alone
+     122 = Georgian alone
+     123 = German alone
+     124 = Greek alone
+     125 = Hungarian alone
+     126 = Icelandic alone
+     127 = Irish alone
+     128 = Italian alone
+     129 = Latvian alone
+     130 = Portuguese
+     131 = Lithuanian alone
+     132 = Luxembourger alone
+     133 = Macedonian alone
+     134 = Maltese alone
+     135 = Moldovan alone
+     136 = Montenegrin alone
+     137 = Norwegian alone
+     138 = Polish alone
+     139 = Romanian alone
+     141 = Russian alone
+     142 = Scandinavian alone
+     143 = Scots-Irish alone
+     144 = Scottish alone
+     145 = Serbian alone
+     146 = Slavic alone
+     147 = Slovak alone
+     148 = Slovenian alone
+     149 = Swedish alone
+     150 = Puerto Rican
+     151 = Swiss alone
+     152 = Turkish alone
+     153 = Ukrainian alone
+     154 = Welsh alone
+     155 = Algerian alone
+     156 = Arab alone
+     157 = Assyrian alone
+     158 = Chaldean alone
+     159 = Egyptian alone
+     160 = Iranian alone
+     161 = Iraqi alone
+     162 = Israeli alone
+     163 = Jordanian alone
+     164 = Kurdish alone
+     165 = Lebanese alone
+     166 = Moroccan alone
+     167 = Palestinian alone
+     168 = Saudi alone
+     169 = Syrian alone
+     170 = Tunisian alone
+     171 = Yemeni alone
+     172 = Australian alone
+     173 = Cajun alone
+     174 = Canadian alone
+     175 = French Canadian alone
+     176 = Pennsylvania German alone
+     177 = Other White alone
+     200 = Black/African American
+     201 = African American alone
+     202 = Burundian alone
+     203 = Cameroonian alone
+     204 = Congolese alone
+     205 = Eritrean alone
+     206 = Ethiopian alone
+     207 = Gambian alone
+     208 = Ghanaian alone
+     209 = Guinean alone
+     210 = Mulatto
+     211 = Ivoirian alone
+     212 = Kenyan alone
+     213 = Liberian alone
+     214 = Nigerian (Nigeria) alone
+     215 = Rwandan alone
+     216 = Senegalese alone
+     217 = Sierra Leonean alone
+     218 = Somali alone
+     219 = South African alone
+     220 = South Sudanese alone
+     221 = Sudanese alone
+     222 = Tanzanian alone
+     223 = Togolese alone
+     224 = Ugandan alone
+     225 = Zimbabwean alone
+     226 = Bahamian alone
+     227 = Barbadian alone
+     228 = Grenadian alone
+     229 = Haitian alone
+     230 = Jamaican alone
+     231 = St. Lucian alone
+     232 = Trinidadian and Tobagonian alone
+     233 = West Indian alone
+     234 = Other Black or African American alone
+     300 = American Indian/Alaska Native
+     302 = Apache
+     303 = Blackfoot
+     304 = Cherokee
+     305 = Cheyenne
+     306 = Chickasaw
+     307 = Chippewa
+     308 = Choctaw
+     309 = Comanche
+     310 = Creek
+     311 = Crow
+     312 = Iroquois
+     313 = Kiowa
+     314 = Lumbee
+     315 = Navajo
+     316 = Osage
+     317 = Paiute
+     318 = Pima
+     319 = Potawatomi
+     320 = Pueblo
+     321 = Seminole
+     322 = Shoshone
+     323 = Sioux
+     324 = Tlingit (Tlingit_Haida, 2000/ACS)
+     325 = Tohono O Odham
+     328 = Hopi
+     329 = Central American Indian
+     330 = Spanish American Indian
+     340 = Aztec
+     341 = Inca
+     342 = Maya
+     343 = Mixtec
+     344 = Taino
+     345 = Tarasco (Purepecha)
+     350 = Delaware
+     351 = Latin American Indian
+     352 = Puget Sound Salish
+     353 = Yakama
+     354 = Yaqui
+     355 = Colville
+     356 = Houma
+     357 = Menominee
+     358 = Yuman
+     359 = South American Indian
+     360 = Mexican American Indian
+     361 = Other Amer. Indian tribe (2000,ACS)
+     362 = 2+ Amer. Indian tribes (2000,ACS)
+     363 = American Indian alone, not specified
+     364 = All other Latin American Indian alone
+     370 = Alaskan Athabaskan
+     371 = Aleut
+     372 = Eskimo
+     373 = Alaskan mixed
+     374 = Inupiat
+     375 = Yup'ik
+     379 = Other Alaska Native tribe(s) (2000,ACS)
+     380 = Alaska Native alone, not specified
+     381 = Alaska Native tribes and villages alone
+     398 = Both Am. Ind. and Alaska Native (2000,ACS)
+     399 = Tribe not specified
+     400 = Chinese
+     410 = Taiwanese
+     420 = Chinese and Taiwanese
+     500 = Japanese
+     600 = Filipino
+     610 = Asian Indian (Hindu 1920_1940)
+     620 = Korean
+     630 = Hawaiian
+     634 = Hawaiian mixed
+     640 = Vietnamese
+     641 = Bhutanese
+     642 = Mongolian
+     643 = Nepalese
+     655 = Afghan
+     656 = Mien
+     657 = Sikh
+     658 = Kazakh
+     659 = Uzbek
+     660 = Cambodian
+     661 = Hmong
+     662 = Laotian
+     663 = Thai
+     664 = Bangladeshi
+     665 = Burmese
+     666 = Indonesian
+     667 = Malaysian
+     668 = Okinawan
+     669 = Pakistani
+     670 = Sri Lankan
+     671 = Other Asian, n.e.c.
+     672 = Asian, not specified
+     673 = Chinese and Japanese
+     674 = Chinese and Filipino
+     675 = Chinese and Vietnamese
+     676 = Chinese and Asian write_in
+     677 = Japanese and Filipino
+     678 = Asian Indian and Asian write_in
+     679 = Other Asian race combinations
+     680 = Samoan
+     681 = Tahitian
+     682 = Tongan
+     684 = 1+ other Polynesian races (2000,ACS)
+     685 = Chamorro
+     686 = Northern Mariana Islander
+     687 = Palauan
+     689 = 1+ other Micronesian races (2000,ACS)
+     690 = Chuukese
+     691 = Guamanian
+     692 = Marshallese
+     695 = Fijian
+     697 = 1+ other Melanesian races (2000,ACS)
+     698 = 2+ PI races from 2+ PI regions
+     699 = Pacific Islander, n.s.
+     700 = Other race, n.e.c.
+     710 = Brazilian
+     720 = Cabo Verdean
+     730 = Guyanese
+     801 = White and Black
+     802 = White and AIAN
+     810 = White and Asian
+     811 = White and Chinese
+     812 = White and Japanese
+     813 = White and Filipino
+     814 = White and Asian Indian
+     815 = White and Korean
+     816 = White and Vietnamese
+     817 = White and Asian write_in
+     818 = White and other Asian race(s)
+     819 = White and two or more Asian groups
+     820 = White and PI
+     821 = White and Native Hawaiian
+     822 = White and Samoan
+     823 = White and Chamorro
+     824 = White and PI write_in
+     825 = White and other PI race(s)
+     826 = White and other race write_in
+     827 = White and other race, n.e.c.
+     830 = Black and AIAN
+     831 = Black and Asian
+     832 = Black and Chinese
+     833 = Black and Japanese
+     834 = Black and Filipino
+     835 = Black and Asian Indian
+     836 = Black and Korean
+     837 = Black and Asian write_in
+     838 = Black and other Asian race(s)
+     840 = Black and PI
+     841 = Black and PI write_in
+     842 = Black and other PI race(s)
+     845 = Black and other race write_in
+     850 = AIAN and Asian
+     851 = AIAN and Filipino (2000 1%)
+     852 = AIAN and Asian Indian
+     853 = AIAN and Asian write_in (2000 1%)
+     854 = AIAN and other Asian race(s)
+     855 = AIAN and PI
+     856 = AIAN and other race write_in
+     860 = Asian and PI
+     861 = Chinese and Hawaiian
+     862 = Chinese, Filipino, Hawaiian (2000 1%)
+     863 = Japanese and Hawaiian (2000 1%)
+     864 = Filipino and Hawaiian
+     865 = Filipino and PI write_in
+     866 = Asian Indian and PI write_in (2000 1%)
+     867 = Asian write_in and PI write_in
+     868 = Other Asian race(s) and PI race(s)
+     869 = Japanese and Korean (ACS)
+     880 = Asian and other race write_in
+     881 = Chinese and other race write_in
+     882 = Japanese and other race write_in
+     883 = Filipino and other race write_in
+     884 = Asian Indian and other race write_in
+     885 = Asian write_in and other race write_in
+     886 = Other Asian race(s) and other race write_in
+     887 = Chinese and Korean
+     890 = PI and other race write_in:
+     891 = PI write_in and other race write_in
+     892 = Other PI race(s) and other race write_in
+     893 = Native Hawaiian or PI other race(s)
+     899 = API and other race write_in
+     901 = White, Black, AIAN
+     902 = White, Black, Asian
+     903 = White, Black, PI
+     904 = White, Black, other race write_in
+     905 = White, AIAN, Asian
+     906 = White, AIAN, PI
+     907 = White, AIAN, other race write_in
+     910 = White, Asian, PI
+     911 = White, Chinese, Hawaiian
+     912 = White, Chinese, Filipino, Hawaiian (2000 1%)
+     913 = White, Japanese, Hawaiian (2000 1%)
+     914 = White, Filipino, Hawaiian
+     915 = Other White, Asian race(s), PI race(s)
+     916 = White, AIAN and Filipino
+     917 = White, Black, and Filipino
+     920 = White, Asian, other race write_in
+     921 = White, Filipino, other race write_in (2000 1%)
+     922 = White, Asian write_in, other race write_in (2000 1%)
+     923 = Other White, Asian race(s), other race write_in (2000 1%)
+     925 = White, PI, other race write_in
+     926 = White and Japanese and Native Hawaiian and Pacific Islander
+     927 = White and Asian and Native Hawaiian and Pacific Islander
+     930 = Black, AIAN, Asian
+     931 = Black, AIAN, PI
+     932 = Black, AIAN, other race write_in
+     933 = Black, Asian, PI
+     934 = Black, Asian, other race write_in
+     935 = Black, PI, other race write_in
+     936 = Black and Native Hawaiian and Other Pacific Islander
+     940 = AIAN, Asian, PI
+     941 = AIAN, Asian, other race write_in
+     942 = AIAN, PI, other race write_in
+     943 = Asian, PI, other race write_in
+     944 = Asian (Chinese, Japanese, Korean, Vietnamese); and Native Hawaiian or PI; and Other
+     950 = White, Black, AIAN, Asian
+     951 = White, Black, AIAN, PI
+     952 = White, Black, AIAN, other race write_in
+     953 = White, Black, Asian, PI
+     954 = White, Black, Asian, other race write_in
+     955 = White, Black, PI, other race write_in
+     960 = White, AIAN, Asian, PI
+     961 = White, AIAN, Asian, other race write_in
+     962 = White, AIAN, PI, other race write_in
+     963 = White, Asian, PI, other race write_in
+     964 = White, Chinese, Japanese, Native Hawaiian
+     970 = Black, AIAN, Asian, PI
+     971 = Black, AIAN, Asian, other race write_in
+     972 = Black, AIAN, PI, other race write_in
+     973 = Black, Asian, PI, other race write_in
+     974 = AIAN, Asian, PI, other race write_in
+     975 = AIAN, Asian, PI, Hawaiian other race write_in
+     976 = Two specified Asian  (Chinese and other Asian, Chinese and Japanese, Japanese and other Asian, Korean and other Asian); Native Hawaiian/PI; and Other Race
+     980 = White, Black, AIAN, Asian, PI
+     981 = White, Black, AIAN, Asian, other race write_in
+     982 = White, Black, AIAN, PI, other race write_in
+     983 = White, Black, Asian, PI, other race write_in
+     984 = White, AIAN, Asian, PI, other race write_in
+     985 = Black, AIAN, Asian, PI, other race write_in
+     986 = Black, AIAN, Asian, PI, Hawaiian, other race write_in
+     990 = White, Black, AIAN, Asian, PI, other race write_in
+     991 = White race; Some other race; Black or African American race and/or American Indian and Alaska Native race and/or Asian groups and/or Native Hawaiian and Other Pacific Islander groups
+     997 = Unknown
+
+31. EDUC
+   General educational attainment.
+   Mapping:
+     00 = N/A or no schooling
+     01 = Nursery school to grade 4
+     02 = Grade 5, 6, 7, or 8
+     03 = Grade 9
+     04 = Grade 10
+     05 = Grade 11
+     06 = Grade 12
+     07 = 1 year of college
+     08 = 2 years of college
+     09 = 3 years of college
+     10 = 4 years of college
+     11 = 5+ years of college
+     99 = Missing
+
+32. EDUCD
+   Detailed educational attainment.
+   Mapping:
+     000 = N/A or no schooling
+     001 = N/A
+     002 = No schooling completed
+     010 = Nursery school to grade 4
+     011 = Nursery school, preschool
+     012 = Kindergarten
+     013 = Grade 1, 2, 3, or 4
+     014 = Grade 1
+     015 = Grade 2
+     016 = Grade 3
+     017 = Grade 4
+     020 = Grade 5, 6, 7, or 8
+     021 = Grade 5 or 6
+     022 = Grade 5
+     023 = Grade 6
+     024 = Grade 7 or 8
+     025 = Grade 7
+     026 = Grade 8
+     030 = Grade 9
+     040 = Grade 10
+     050 = Grade 11
+     060 = Grade 12
+     061 = 12th grade, no diploma
+     062 = High school graduate or GED
+     063 = Regular high school diploma
+     064 = GED or alternative credential
+     065 = Some college, but less than 1 year
+     070 = 1 year of college
+     071 = 1 or more years of college credit, no degree
+     080 = 2 years of college
+     081 = Associate's degree, type not specified
+     082 = Associate's degree, occupational program
+     083 = Associate's degree, academic program
+     090 = 3 years of college
+     100 = 4 years of college
+     101 = Bachelor's degree
+     110 = 5+ years of college
+     112 = 7 years of college
+     113 = 8+ years of college
+     114 = Master's degree
+     115 = Professional degree beyond a bachelor's degree
+     116 = Doctoral degree
+     999 = Missing
+
+33. EMPSTAT
+   General employment status.
+   Mapping:
+     0 = N/A
+     1 = Employed
+     2 = Unemployed
+     3 = Not in labor force
+     9 = Unknown/Illegible
+
+34. EMPSTATD
+   Detailed employment status.
+   Mapping:
+     00 = N/A
+     10 = At work
+     11 = At work, public emerg
+     12 = Has job, not working
+     13 = Armed forces
+     14 = Armed forces--at work
+     15 = Armed forces--not at work but with job
+     20 = Unemployed
+     21 = Unemp, exper worker
+     22 = Unemp, new worker
+     30 = Not in Labor Force
+     31 = NILF, housework
+     32 = NILF, unable to work
+     33 = NILF, school
+     34 = NILF, other
+     99 = Unknown/Illegible
+
+35. LABFORCE
+   Labor force participation status.
+   Mapping:
+     0 = N/A
+     1 = No, not in the labor force
+     2 = Yes, in the labor force
+     9 = Unclassifiable (employment status unknown)
+
+36. CLASSWKR
+   General class of worker.
+   Mapping:
+     0 = N/A
+     1 = Self-employed
+     2 = Works for wages
+     9 = Unknown
+
+37. CLASSWKRD
+   Detailed class of worker.
+   Mapping:
+     00 = N/A
+     10 = Self-employed
+     11 = Employer
+     12 = Working on own account
+     13 = Self-employed, not incorporated
+     14 = Self-employed, incorporated
+     20 = Works for wages
+     22 = Wage/salary, private
+     23 = Wage/salary at non-profit
+     24 = Wage/salary, government
+     25 = Federal govt employee
+     26 = Armed forces
+     27 = State govt employee
+     28 = Local govt employee
+     29 = Unpaid family worker
+     98 = Illegible
+     99 = Unknown
+
+38. WKSWORK2
+   Weeks worked last year, intervalled.
+   Mapping:
+     0 = N/A
+     1 = 1-13 weeks
+     2 = 14-26 weeks
+     3 = 27-39 weeks
+     4 = 40-47 weeks
+     5 = 48-49 weeks
+     6 = 50-52 weeks
+
+39. UHRSWORK
+   Usual hours worked per week.
+   Mapping:
+     00 = N/A
+     01 = 1
+     02 = 2
+     03 = 3
+     04 = 4
+     05 = 5
+     06 = 6
+     07 = 7
+     08 = 8
+     09 = 9
+     10 = 10
+     11 = 11
+     12 = 12
+     13 = 13
+     14 = 14
+     15 = 15
+     16 = 16
+     17 = 17
+     18 = 18
+     19 = 19
+     20 = 20
+     21 = 21
+     22 = 22
+     23 = 23
+     24 = 24
+     25 = 25
+     26 = 26
+     27 = 27
+     28 = 28
+     29 = 29
+     30 = 30
+     31 = 31
+     32 = 32
+     33 = 33
+     34 = 34
+     35 = 35
+     36 = 36
+     37 = 37
+     38 = 38
+     39 = 39
+     40 = 40
+     41 = 41
+     42 = 42
+     43 = 43
+     44 = 44
+     45 = 45
+     46 = 46
+     47 = 47
+     48 = 48
+     49 = 49
+     50 = 50
+     51 = 51
+     52 = 52
+     53 = 53
+     54 = 54
+     55 = 55
+     56 = 56
+     57 = 57
+     58 = 58
+     59 = 59
+     60 = 60
+     61 = 61
+     62 = 62
+     63 = 63
+     64 = 64
+     65 = 65
+     66 = 66
+     67 = 67
+     68 = 68
+     69 = 69
+     70 = 70
+     71 = 71
+     72 = 72
+     73 = 73
+     74 = 74
+     75 = 75
+     76 = 76
+     77 = 77
+     78 = 78
+     79 = 79
+     80 = 80
+     81 = 81
+     82 = 82
+     83 = 83
+     84 = 84
+     85 = 85
+     86 = 86
+     87 = 87
+     88 = 88
+     89 = 89
+     90 = 90
+     91 = 91
+     92 = 92
+     93 = 93
+     94 = 94
+     95 = 95
+     96 = 96
+     97 = 97
+     98 = 98
+     99 = 99 (Topcode)
+
+40. INCTOT
+   Total personal income.
+   Mapping: no categorical mapping
+
+41. FTOTINC
+   Total family income.
+   Mapping: no categorical mapping
+
+42. INCWAGE
+   Wage and salary income.
+   Mapping: no categorical mapping
+
+43. INCEARN
+   Total personal earned income.
+   Mapping: no categorical mapping
+
+44. POVERTY
+   Family income as a percentage of the poverty threshold.
+   Mapping: no categorical mapping
+
+45. MIGRATE1
+   Migration status 1 year ago.
+   Mapping:
+     0 = N/A
+     1 = Same house
+     2 = Moved within state
+     3 = Moved between states
+     4 = Abroad one year ago
+     9 = Unknown
+
+46. MIGRATE1D
+   Detailed migration status 1 year ago.
+   Mapping:
+     00 = N/A
+     10 = Same house
+     20 = Same state (migration status within state unknown)
+     21 = Different house, moved within county
+     22 = Different house, moved within state, between counties
+     23 = Different house, moved within state, within PUMA
+     24 = Different house, moved within state, between PUMAs
+     25 = Different house, unknown within state
+     30 = Different state (general)
+     31 = Moved between contigious states
+     32 = Moved between non-contiguous states
+     40 = Abroad one year ago
+     90 = Unknown
