@@ -8,3 +8,7 @@ __pycache__/
 .DS_store
 /figures
 /preprocessing_reports
+
+# raw / large data lives in data/ (not pushed); only its README is tracked
+data/*
+!data/README.md
